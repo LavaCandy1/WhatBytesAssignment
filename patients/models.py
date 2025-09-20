@@ -17,7 +17,7 @@ class Patient(models.Model):
 
     name = models.CharField(max_length=100)
     date_of_birth = models.DateField(help_text="Date of birth of patient.")
-    phone_number = models.CharField(max_length=10)
+    phone_number = models.CharField(max_length=15)
     gender = models.CharField(max_length=1,choices=Gender.choices,null=True)
     address = models.TextField()
     medical_record = models.TextField(blank=True)
